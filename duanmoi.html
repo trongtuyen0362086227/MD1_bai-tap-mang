@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="width: 100%;">
+  <tr>
+    <th>STT</th>
+    <th>NAME</th>
+  </tr>
+  <tbody id="drawTable">
+<!--  <tr>-->
+<!--    <th>STT</th>-->
+<!--    <th>NAME</th>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>1</td>-->
+<!--    <td>Mai gau</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>2</td>-->
+<!--    <td>Hai</td>-->
+<!--  </tr>-->
+  </tbody>
+</table>
+<script>
+let studentsList = ['Mai gau', 'Hai']
+function showListStudent() {
+  let drawTable = '';
+  for (let i = 0; i < studentsList.length; i++) {
+    drawTable += '<tr>' +
+            '<td>'+i+'</td>'
+      '<td>'+studentsList[i]+'</td>'+
+          '<tr/>'
+  }
+  document.getElementById('drawTable').innerHTML = drawTable;
+}
+
+showListStudent();
+</script>
+</body>
+</html>

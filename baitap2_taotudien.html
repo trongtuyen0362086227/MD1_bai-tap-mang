@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+<form id="form">
+  <h1>Từ điển màu sắc anh-việt</h1><br>
+  <label>Nhập màu sắc</label>
+  <input type="text" id="coloreng">
+  <input type="button" value="tra cứu" onclick="dich()">
+  <label>Tiếng Việt</label>
+  <input type="text" id="mausac">
+  <script>
+      function dich() {
+    let color = ["White","Blu","Green","Yellow","Orange","Pink","Gray","Red","Black","Brown", "Purple"]
+    let mausac = ["Trắng","Xanh da trời","Xanh lá cây","Vàng","Da cam","Hồng","Xám","Đỏ","Đen","Nâu", "Tím"]
+    let isClor = document.getElementById("coloreng").value;
+          console.log("isClor==================", isClor)
+    for (let i = 0; i < color.length; i++) {
+        if (isClor === color[i]){
+            document.getElementById('mausac').value = mausac[i];
+            break;
+        }
+        else {
+            alert('Không tìm thấy màu sắc')
+        }
+    }
+      }
+  </script>
+</form>
+</body>
+</html>

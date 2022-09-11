@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="numBer"/>
+<input type="button" id="btnAdd" value="Thêm số" onclick="themSoVaoMang();"/>
+<p id="demo"></p>
+<script>
+function themSoVaoMang() {
+    var array = Array();
+    var x =0;
+        array[x] = document.getElementById("numBer").value;
+        x++;
+        document.getElementById("numBer").value = "";
+    }
+</script>
+</body>
+</html>
